@@ -167,7 +167,6 @@ Se hizo uso de JavaScript para las funciones para la creacion del juego del ahor
 
 Por ultimo se hizo uso de estilos.css para poder darle mas color a la pagina, asi como cierto movimiento al titulo cuando el cursor esta sobre él, tambien se le dio color a los botones que tenemos y a el abecedario, entre otras funciones 
 
-/* ========== General Styles ========== */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #F1F0E8;
