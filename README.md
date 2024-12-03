@@ -2,7 +2,7 @@ Este proyecto es un **juego de ahorcado** interactivo en el que los jugadores de
 
 Para el cuerpo de ahorcado.html se ocupo: 
 
-<!DOCTYPE html>
+<!DOCTYPE htl>
 <html lang="en">
 
 <head>
