@@ -1,0 +1,141 @@
+/* ========== General Styles ========== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F1F0E8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ========== Título Principal ========== */
+h1.Titulo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow:
+        -2px -2px 0 #ff9900,
+        2px -2px 0 #ff9900,
+        -2px 2px 0 #ff9900,
+        2px 2px 0 #ff9900,
+        4px 4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transform: translateY(0);
+    transition: transform 0.75s ease-in-out;
+}
+
+h1.Titulo:hover {
+    transform: translateY(-10px);
+}
+
+h1#final, h3#acierto {
+    margin: 20px ;
+    font-size: 1.8em;
+}
+
+h2.palabra { 
+    font-size: 2em;
+    letter-spacing: 0.3em; 
+    margin-bottom: 20px auto; 
+    margin: 20px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #2e8b57, #3cb371);
+    border: 2px solid #2e8b57;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.letra {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #2e8b57, #3cb371);
+    border: 2px solid #2e8b57;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.letra:hover {
+    background: linear-gradient(135deg, #3cb371, #2e8b57);
+    transform: translateY(-2px);
+}
+
+button.letra:disabled {
+    background: #d3d3d3; /* Gris claro */
+    color: #666;        /* Texto gris oscuro */
+    border-color: #999; /* Borde gris */
+    cursor: not-allowed; /* Cursor de no permitido */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3cb371, #2e8b57);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#abecedario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+/* Botones Especiales */
+#reset, #pista {
+    background: linear-gradient(135deg, #007acc, #005fa3);
+    border: 2px solid #005fa3;
+    color: #fff;
+}
+
+/* ========== Pista Estilizada ========== */
+#ayu_pista {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; /* Color de texto visible */
+    background-color: #fce1b3;
+    border: 2px solid #ff9e6b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none; /* Inicialmente oculto */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Invisible inicialmente */
+    transform: translateY(-10px); /* Animación inicial */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+/* ========== Imagen del Ahorcado ========== */
+picture img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
