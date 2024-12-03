@@ -51,6 +51,8 @@ Para el cuerpo de ahorcado.html se ocupo:
 </html>
 Se hizo uso de JavaScript para las funciones para la creacion del juego del ahorcado, entre las funciones estan, el generador de palabras el cual se encarga de dar alguna palabra al asar la cual sera la palabra a adivinar, el generador de los espacios para cada letra, el generador del abecedario,el controlador de la cantidad de intentos que tiene el jugador, el que dara una pista en caso que el jugador la pida, entre otras funciones
 
+
+
    <script>
         // Conjunto de palabras 
         var palabras = [["conejo", "Un animal"], ["piña", "Es una fruta"], ["zapato", "Los utilizas en los pies"], ["pantalon", "Es una prenda de vestir"], ["telefono", "Tecnologia"], ["tequila", "Bebida alcholica"], ["pajaro", "ave"], ["perfume", "lo usamos para oler rico"], ["jugo", "Bebida"], ["flores", "En primavera hay muchas"], ["chamarra", "sirve para quitar el frio"], ["silla", "La ocupas para sentarte"], ["amor", "Sentimiento"]];
