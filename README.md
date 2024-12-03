@@ -151,4 +151,4 @@ Se hizo uso de JavaScript para las funciones para la creacion del juego del ahor
         window.onload = iniciar();
 Por ultimo se hizo uso de estilos.css para poder darle mas color a la pagina, asi como cierto movimiento al titulo cuando el cursor esta sobre él, tambien se le dio color a los botones que tenemos y a el abecedario, entre otras funciones, dando como resultado:
 
-file:///C:/Users/hemy0/Desktop/CURSOS%20502/CURSOS%20502/PRGRAMACION%20WEB/proyecto%201/ahorcado.html
+![image](https://github.com/user-attachments/assets/7d133096-814d-4a10-a200-5495408a6a10)
