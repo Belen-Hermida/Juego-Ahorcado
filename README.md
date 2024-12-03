@@ -2,17 +2,6 @@ Este proyecto es un **juego de ahorcado** interactivo en el que los jugadores de
 
 Para el cuerpo de ahorcado.html se ocupo: 
 
-<!DOCTYPE htl>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego De Ahorcado</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-
-<body>
     <div class="container">
         <h1 class="Titulo">¡Juego del Ahorcado!</h1>
         <h1 id="final" class="zoom-in"></h1>
@@ -46,13 +35,10 @@ Para el cuerpo de ahorcado.html se ocupo:
             <div class="col"></div>
         </div>
     </div>
-</body>
 
-</html>
 Se hizo uso de JavaScript para las funciones para la creacion del juego del ahorcado, entre las funciones estan, el generador de palabras el cual se encarga de dar alguna palabra al asar la cual sera la palabra a adivinar, el generador de los espacios para cada letra, el generador del abecedario,el controlador de la cantidad de intentos que tiene el jugador, el que dara una pista en caso que el jugador la pida, entre otras funciones
 
-<script>
-        // Conjunto de palabras 
+
         var palabras = [["conejo", "Un animal"], ["piña", "Es una fruta"], ["zapato", "Los utilizas en los pies"], ["pantalon", "Es una prenda de vestir"], ["telefono", "Tecnologia"], ["tequila", "Bebida alcholica"], ["pajaro", "ave"], ["perfume", "lo usamos para oler rico"], ["jugo", "Bebida"], ["flores", "En primavera hay muchas"], ["chamarra", "sirve para quitar el frio"], ["silla", "La ocupas para sentarte"], ["amor", "Sentimiento"]];
 
         // Palabra a adivinar
@@ -163,147 +149,6 @@ Se hizo uso de JavaScript para las funciones para la creacion del juego del ahor
         }
 
         window.onload = iniciar();
-</script>
+Por ultimo se hizo uso de estilos.css para poder darle mas color a la pagina, asi como cierto movimiento al titulo cuando el cursor esta sobre él, tambien se le dio color a los botones que tenemos y a el abecedario, entre otras funciones, dando como resultado:
 
-Por ultimo se hizo uso de estilos.css para poder darle mas color a la pagina, asi como cierto movimiento al titulo cuando el cursor esta sobre él, tambien se le dio color a los botones que tenemos y a el abecedario, entre otras funciones 
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F1F0E8;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    max-width: 100%;
-    width: 95%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-/* ========== Título Principal ========== */
-h1.Titulo {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #ffcc00;
-    text-shadow:
-        -2px -2px 0 #ff9900,
-        2px -2px 0 #ff9900,
-        -2px 2px 0 #ff9900,
-        2px 2px 0 #ff9900,
-        4px 4px 8px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    transform: translateY(0);
-    transition: transform 0.75s ease-in-out;
-}
-
-h1.Titulo:hover {
-    transform: translateY(-10px);
-}
-
-h1#final, h3#acierto {
-    margin: 20px ;
-    font-size: 1.8em;
-}
-
-h2.palabra { 
-    font-size: 2em;
-    letter-spacing: 0.3em; 
-    margin-bottom: 20px auto; 
-    margin: 20px auto;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-button {
-    padding: 10px 15px;
-    margin: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(135deg, #2e8b57, #3cb371);
-    border: 2px solid #2e8b57;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button.letra {
-    padding: 10px 15px;
-    margin: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(135deg, #2e8b57, #3cb371);
-    border: 2px solid #2e8b57;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button.letra:hover {
-    background: linear-gradient(135deg, #3cb371, #2e8b57);
-    transform: translateY(-2px);
-}
-
-button.letra:disabled {
-    background: #d3d3d3; /* Gris claro */
-    color: #666;        /* Texto gris oscuro */
-    border-color: #999; /* Borde gris */
-    cursor: not-allowed; /* Cursor de no permitido */
-}
-
-button:hover {
-    background: linear-gradient(135deg, #3cb371, #2e8b57);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-}
-
-#abecedario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 20px;
-}
-
-/* Botones Especiales */
-#reset, #pista {
-    background: linear-gradient(135deg, #007acc, #005fa3);
-    border: 2px solid #005fa3;
-    color: #fff;
-}
-
-/* ========== Pista Estilizada ========== */
-#ayu_pista {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333; /* Color de texto visible */
-    background-color: #fce1b3;
-    border: 2px solid #ff9e6b;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    display: none; /* Inicialmente oculto */
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    opacity: 0; /* Invisible inicialmente */
-    transform: translateY(-10px); /* Animación inicial */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-
-/* ========== Imagen del Ahorcado ========== */
-picture img {
-    max-width: 20%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-}
+file:///C:/Users/hemy0/Desktop/CURSOS%20502/CURSOS%20502/PRGRAMACION%20WEB/proyecto%201/ahorcado.html
