@@ -1,7 +1,7 @@
 Este proyecto es un **juego de ahorcado** interactivo en el que los jugadores deben adivinar una palabra oculta. Al comienzo, se elige una palabra aleatoria de un conjunto predefinido, y el jugador tiene 6 intentos para acertar las letras. Cada vez que el jugador selecciona una letra, el juego muestra si fue correcta o incorrecta, actualizando la visualización de la palabra y la imagen del ahorcado según los intentos restantes. Si el jugador adivina todas las letras de la palabra o se queda sin intentos, el juego termina, mostrando un mensaje de victoria o derrota. La implementación en **JavaScript** incluye la selección aleatoria de palabras, el manejo de los intentos, y la actualización en tiempo real del estado del juego (aciertos y errores). Además, al seleccionar una letra, se deshabilita el botón correspondiente para evitar que se seleccione nuevamente. En cuanto al **CSS**, se usaron estilos responsivos para asegurar que el juego se vea bien en pantallas de laptop y dispositivos móviles. Se emplearon animaciones de rebote y sacudida para resaltar los aciertos y errores. 
 
 Para el cuerpo de ahorcado.html se ocupo: 
-
+```html
     <div class="container">
         <h1 class="Titulo">¡Juego del Ahorcado!</h1>
         <h1 id="final" class="zoom-in"></h1>
@@ -35,9 +35,10 @@ Para el cuerpo de ahorcado.html se ocupo:
             <div class="col"></div>
         </div>
     </div>
-
+```
 Se hizo uso de JavaScript para las funciones para la creacion del juego del ahorcado, entre las funciones estan, el generador de palabras el cual se encarga de dar alguna palabra al asar la cual sera la palabra a adivinar, el generador de los espacios para cada letra, el generador del abecedario,el controlador de la cantidad de intentos que tiene el jugador, el que dara una pista en caso que el jugador la pida, entre otras funciones
 
+```javascript
 
         var palabras = [["conejo", "Un animal"], ["piña", "Es una fruta"], ["zapato", "Los utilizas en los pies"], ["pantalon", "Es una prenda de vestir"], ["telefono", "Tecnologia"], ["tequila", "Bebida alcholica"], ["pajaro", "ave"], ["perfume", "lo usamos para oler rico"], ["jugo", "Bebida"], ["flores", "En primavera hay muchas"], ["chamarra", "sirve para quitar el frio"], ["silla", "La ocupas para sentarte"], ["amor", "Sentimiento"]];
 
@@ -149,6 +150,9 @@ Se hizo uso de JavaScript para las funciones para la creacion del juego del ahor
         }
 
         window.onload = iniciar();
+
+```
+
 Por ultimo se hizo uso de estilos.css para poder darle mas color a la pagina, asi como cierto movimiento al titulo cuando el cursor esta sobre él, tambien se le dio color a los botones que tenemos y a el abecedario, entre otras funciones, dando como resultado:
 
 ![image](https://github.com/user-attachments/assets/7d133096-814d-4a10-a200-5495408a6a10)
